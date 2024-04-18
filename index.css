@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+.navbar{
+    list-style: none;    /*navbar styling*/
+    padding-top: 12px;
+    padding-left: 1100px;
+}
+.navbar li{
+    display: inline;
+    margin-left: 40px; 
+
+}
+.navbar li a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    transition: 0.5s ease;
+} 
+
+.container{
+    background: rgba(0,0,0,0.7)url(images/img1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#home{
+ height: 600px;
+width: 100%;
+}
+
+.student-form{
+    height: 580px;
+    background-color: rgba(0, 0, 0, 0.201);
+    margin: 20px 300px;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#Heading{
+    height: 50px;
+    background-color: transparent;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    
+}
+
+.user-details{
+    height: 500px;
+    width: 700px;
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+.user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 5px;
+    margin: 5px 0px 20px 0px;
+}
+
+.user-details .input-box input{
+    height:35px;
+    width: 200%;
+    outline: none;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    padding-left: 15px;
+    font-size: 13px;
+    
+}
+
+input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.gender-details{
+    margin-top: 10px;
+    
+}
+.gender-details .gender-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+#male{
+    margin-left: 10px;
+}
+
+#female{
+    margin-left: 15px;
+}
+
+.btn{
+    height: 45px;
+    width: 600px;
+    margin: 20px 0;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: rgb(131, 21, 39);
+}
+
+
+/* student table */
+
+#record{
+    height: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.942);
+}
+
+
+.table-container{
+    height: 500px;
+    width: 1160px;
+    background-color: #ddd;
+    margin: 0px 100px;
+    border: 2px solid white;
+    border-radius: 0px;
+    
+    overflow: hidden;    /*to make the table scroll */
+    overflow-y: scroll;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 12px; /*scrollbar width*/
+    
+}
+
+::-webkit-scrollbar-track{  
+    background-color: whitesmoke; /* scrollbar backhround color */
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.867);
+}
+
+
+
+table {
+    width: 100%;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    
+}
+
+th,
+td {
+    text-align: left;
+    padding: 5px ;
+}
+
+th
+ {
+    
+    color: black;
+}
+
+
+
+.btn-edit{                     /*edit button*/
+    border: none;
+    width: 70px;
+    border-radius: 5px;
+    color: #ddd;
+    padding: 3px;
+    background-color: #0b0;
+    margin-bottom: 2px;
+}
+
+.btn-add {
+    background-color: rgb(131, 21, 39);            /*add button*/
+    color: white;
+}
+
+.btn-delete{
+    border: none;                                     /*delete button*/
+    width: 70px;
+    border-radius: 5px;
+    color: #ddd;
+    padding: 3px;
+    background-color: rgb(181, 18, 18);
+}

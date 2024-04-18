@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#record">Records</a></li>
+            </ul>
+        </nav>
+
+        <div id="home">
+            <div class="student-form">
+                <div id="Heading">
+                    <h1>Student Registration Form</h1>
+                </div>
+                <form id="add-students">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <label for="name">Student Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <!--<i class="fa-regular fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>-->
+                         <span></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="id">Student id</label>
+                        <input type="text" id="id" placeholder="Enter your id" >
+                         <!--<i class="fa-regular fa-circle-check"></i>
+                         <i class="fa-solid fa-circle-exclamation"></i>-->
+                         <span></span>
+                    </div>
+
+                    <div class="input-box ">
+                        <label for="contactno">Contact no. </label>
+                        <input type="number" id="contact" placeholder="Enter your contact no." required>
+                         <!--<i class="fa-regular fa-circle-check"></i>
+                         <i class="fa-solid fa-circle-exclamation"></i>-->
+                         <span></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                         <!--<i class="fa-regular fa-circle-check"></i>
+                         <i class="fa-solid fa-circle-exclamation"></i>-->
+                         <span></span>
+                    </div>
+
+                    <div id="genders" class="gender-details">
+                        <div class="gender-title details">Gender</div>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female"> Female</label>
+                        
+                    </div>
+                    
+                    <!--<input type="submit" value="Register" class="submit-button btn-add">-->
+                    <button class="btn btn-add" onclick="addStudent()">Submit</button>
+                </div>
+
+            </form>
+                
+
+                
+                
+           
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="record">
+        <div class="table-container">
+        <table class="record-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>contact no.</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <!-- Rows will be added here dynamically -->
+        </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

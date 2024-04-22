@@ -226,3 +226,196 @@ th
     padding: 3px;
     background-color: rgb(181, 18, 18);
 }
+
+/* media querry */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   /* for ipad mini */
+    
+    .container{
+        width: 1500px;
+    }
+    .navbar li{
+        display: none;
+    
+    }
+
+    h1{
+        font-size: 20px;
+        
+    }
+
+    #home{
+        height: 600px;
+       width: 600px;
+       }
+
+    .student-form{
+        height: 580px;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.201);
+        margin-left: 130px;
+    }
+
+    .user-details{
+        height: 500px;
+        width: 420px;
+    }
+    .user-details .input-box{
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 3px;
+        margin: 5px 0px 20px 0px;
+    }
+    
+    .user-details .input-box input{
+        height:35px;
+        width: 220%;
+        
+    }
+    .btn{
+        height: 45px;
+        width: 200px;
+    }
+    
+    #record{
+        height: 600px;
+        width: 200%;
+        background-color: rgba(0, 0, 0, 0.942);
+    }
+    
+    
+    .table-container{
+        height: 500px;
+        width: 740px;
+        background-color: #ddd;
+        margin: 0px 100px;
+        margin-left: 10px;
+        overflow: hidden;    /*to make the table scroll */
+        overflow-y: scroll;
+        overflow-x: scroll;
+       
+    }
+    
+table {
+    width: 300px;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    
+}
+
+th,
+td {
+    text-align: left;
+    padding: 1px ;
+}
+
+th
+ {
+    
+    color: black;
+}
+
+
+}
+
+@media only screen and (min-device-width:360px) and (max-device-width: 767px){  /* for samsung galaxy s8+ */
+
+    .container{
+        width: 1500px;
+    }
+    .navbar li{
+        display: none;
+    
+    }
+
+    h1{
+        font-size: 16px;
+        
+    }
+
+    #home{
+        height: 600px;
+       width: 800px;
+       }
+
+    .student-form{
+        height: 580px;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.201);
+        /*margin: 20px 200px;*/
+        margin-left: 80px;
+    }
+
+    .user-details{
+        height: 500px;
+        width: 420px;
+    }
+    .user-details .input-box{
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 3px;
+        margin: 5px 0px 20px 0px;
+    }
+    
+    .user-details .input-box input{
+        height:35px;
+        width: 220%;
+        
+    }
+    .btn{
+        height: 45px;
+        width: 200px;
+    }
+    
+    #record{
+        height: 600px;
+        width: 300%;
+        background-color: rgba(0, 0, 0, 0.942);
+    }
+    
+    
+    .table-container{
+        height: 500px;
+        width: 700px;
+        background-color: #ddd;
+        margin: 0px 100px;
+        margin-left: 10px;
+        overflow: hidden;    /*to make the table scroll */
+        overflow-y: scroll;
+        overflow-x: scroll;
+       
+    }
+    
+table {
+    width: 400px;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    
+}
+th,
+td {
+    text-align: left;
+    padding: 1px ;
+}
+
+th
+ {
+    
+    color: black;
+}
+
+
+
+}

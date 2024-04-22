@@ -1,44 +1,3 @@
-// Function to validate the form
-function validateForm() {
-  // Retrieve form data
-  var studentName = document.getElementById('name').value;
-  var studentId = document.getElementById('id').value;
-  var email = document.getElementById('email').value;
-  var contactNo = document.getElementById('contact').value;
-
-  // Regular expressions for validation
-  var nameRegex = /^[a-zA-Z ]+$/;
-  var idRegex = /^[0-9]+$/;
-  var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  var contactRegex = /^[0-9]+$/;
-
-  // Validate student name
-  if (!nameRegex.test(studentName)) {
-      alert('Student name must contain only characters.');
-      return false;
-  }
-
-  // Validate student ID
-  if (!idRegex.test(studentId)) {
-      alert('Student ID must contain only numbers.');
-      return false;
-  }
-
-  // Validate email ID
-  if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address.');
-      return false;
-  }
-
-  // Validate contact number
-  if (!contactRegex.test(contactNo)) {
-      alert('Contact number must contain only numbers.');
-      return false;
-  }
-
-  // If all validations pass
-  return true;
-}
 // Function to add a new student record
 function addStudent() {
   // Get the values from input fields
@@ -48,13 +7,42 @@ function addStudent() {
   var sdEmail = document.getElementById("email").value;
   var sdGender = document.querySelector('input[name="gender"]:checked').value;
 
-  var nameRegex = /^[a-zA-Z ]+$/;
 
   if (sdName.trim() === '' || sdId.trim() === '' || sdContact.trim() === '' || sdEmail.trim() === '') {
     alert('Please fill in all fields');
     return;
   }
-  validateForm();
+  
+  var nameRegex = /^[a-zA-Z ]+$/;
+  var idRegex = /^[0-9]+$/;
+  var contactRegex = /^[0-9]+$/;
+  var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+
+   // Validate student name
+   if (!nameRegex.test(sdName)) {
+    alert('Student name must contain only characters.');
+    return false;
+}
+
+// Validate student ID
+if (!idRegex.test(sdId)) {
+    alert('Student ID must contain only numbers.');
+    return false;
+}
+
+// Validate contact number
+if (!contactRegex.test(sdContact)) {
+    alert('Contact number must contain only numbers.');
+    return false;
+}
+
+// Validate email ID
+if (!emailRegex.test(sdEmail)) {
+  alert('Please enter a valid email address.');
+  return false;
+}  
+
   // Create a new row and cells
   var table = document.querySelector('.record-table').getElementsByTagName('tbody')[0];
   var newRow = table.insertRow(table.length);
@@ -89,6 +77,7 @@ function addStudent() {
 // Function to edit an existing student record
 function editStudent(td) {
   var studentInput = document.getElementById("name");
+
   // Set focus to the input field
   studentInput.focus();
   selectedRow = td.parentElement.parentElement;
@@ -129,7 +118,7 @@ function saveEdit() {
   document.getElementById('id').value = '';
   document.getElementById('contact').value = '';
   document.getElementById('email').value = '';
-  //document.querySelector('input[name="gender"]:checked').value = '';
+  document.querySelector('input[name="gender"]:checked').value = '';
 
   // Change the Save button back to the submit button
   var addButton = document.querySelector('.btn-add');
